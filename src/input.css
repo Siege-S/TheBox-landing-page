@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-workSans: "Work Sans";
+
+  --color-primary: #2947a9;
+  --color-secondary: #f9995d;
+  --color-dark: #292e3d;
+  --color-purple: #3559c7;
+}
+
+body {
+  font-family: "Work Sans";
+}
+
+#hero-section {
+  height: calc(100dvh - 60px);
+  background-image: url("../assets/images/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#hero-section .btn1 {
+  @apply flex flex-1 gap-2 justify-center border-1 p-2 cursor-pointer active:brightness-75;
+}
+
+.click {
+  @apply cursor-pointer active:brightness-75 hover:brightness-90;
+}
+#consultation-section {
+  background-image: url("/assets/images/image-kitchen.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+  width: 100%;
+  @media (width >= 40rem) {
+    max-width: 40rem;
+  }
+  @media (width >= 48rem) {
+    max-width: 48rem;
+  }
+  @media (width >= 64rem) {
+    max-width: 64rem;
+  }
+}
