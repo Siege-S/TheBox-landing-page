@@ -13,3 +13,5 @@ menuLinks.forEach((element) => {
     mobileMenu.classList.toggle("hidden");
   });
 });
+
+AOS.init();
