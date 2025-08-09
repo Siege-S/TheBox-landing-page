@@ -30,7 +30,7 @@ body {
   @apply cursor-pointer active:brightness-75 hover:brightness-90;
 }
 #consultation-section {
-  background-image: url("/assets/images/image-kitchen.png");
+  background-image: url("../assets/images/image-kitchen.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
