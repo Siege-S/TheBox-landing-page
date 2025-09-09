@@ -18,18 +18,22 @@ menuLinks.forEach((element) => {
   });
 });
 
+const basePath = window.location.pathname.includes("/TheBox-landing-page")
+  ? "/TheBox-landing-page"
+  : "";
+
 const heroImages = [
   {
     title: "National University of Architecture",
-    src: "url('../assets/images/hero-bg.png')",
+    src: `url('${basePath}/assets/images/hero-bg.png')`,
   },
   {
     title: "The Essence of Modern Architecture",
-    src: "url('../assets/images/hero-bg2.jpg')",
+    src: `url('${basePath}/assets/images/hero-bg2.jpg')`,
   },
   {
     title: "A Journey into Modern Spaces",
-    src: "url('../assets/images/hero-bg3.jpg')",
+    src: `url('${basePath}/assets/images/hero-bg3.jpg')`,
   },
 ];
 
