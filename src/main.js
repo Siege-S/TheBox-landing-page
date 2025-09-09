@@ -21,22 +21,22 @@ menuLinks.forEach((element) => {
 const heroImages = [
   {
     title: "National University of Architecture",
-    src: "assets/images/hero-bg.png",
+    src: "url('../assets/images/hero-bg.png')",
   },
   {
     title: "The Essence of Modern Architecture",
-    src: "assets/images/hero-bg2.jpg",
+    src: "url('../assets/images/hero-bg2.jpg')",
   },
   {
     title: "A Journey into Modern Spaces",
-    src: "assets/images/hero-bg3.jpg",
+    src: "url('../assets/images/hero-bg3.jpg')",
   },
 ];
 
 // console.log(heroImages.length - 1);
 let currentIndex = 0;
 const updateImage = () => {
-  heroSection.style.backgroundImage = `url(${heroImages[currentIndex].src})`;
+  heroSection.style.backgroundImage = heroImages[currentIndex].src;
   titleProject.innerText = heroImages[currentIndex].title;
   console.log(currentIndex);
 };
